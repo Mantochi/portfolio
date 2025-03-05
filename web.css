@@ -266,3 +266,91 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
+
+/* General Fixes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Prevents layout issues */
+}
+
+/* Make Navbar Responsive */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center Content */
+.content {
+    width: 90%;  /* Reduce width for small screens */
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Make Form Responsive */
+.form {
+    width: 90%;
+    max-width: 350px;
+    position: relative; /* Remove absolute positioning */
+    margin: 20px auto;  /* Center the form */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    /* Stack Menu Items Vertically */
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    /* Make Search Bar Fit Small Screens */
+    .search {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .srch {
+        width: 70%;
+    }
+
+    .btn {
+        width: 30%;
+    }
+
+    /* Adjust Content Text */
+    .content h1 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    .content .par {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Fix Form on Mobile */
+    .form {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+}
